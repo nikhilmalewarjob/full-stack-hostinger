@@ -6,7 +6,7 @@ import './App.css'
 function App() {
   const [message, setMessage] = useState("")
 
-  fetch("http://localhost:4000/api/message")
+  fetch("http://72.61.232.45:4000/api/message")
   .then((res) => res.json())
   .then((data) => setMessage(data?.message))
 
